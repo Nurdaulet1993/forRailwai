@@ -18,6 +18,6 @@ RUN npm run build --prod
 
 # Use NGINX to serve the Angular application
 FROM nginx:alpine
-COPY --from=build /app/dist/app/browser /usr/share/nginx/html
+COPY --from=build /app/dist/forRailway/browser /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
