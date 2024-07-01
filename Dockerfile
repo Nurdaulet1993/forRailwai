@@ -1,5 +1,5 @@
 # Use an official Node runtime as a parent image
-FROM node:22.2.0 as build
+FROM node:22.2.0
 
 # Set the working directory
 WORKDIR /app
